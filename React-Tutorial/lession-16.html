@@ -1,0 +1,72 @@
+<div id="root"></div>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/prop-types@15.6/prop-types.min.js"></script>
+<script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+<script type="text/babel">
+  class MyFancyFrom extends React.Component {
+    static availableOptions = ['apple', 'cherry', 'orange', 'pear', 'peach', 'grape']
+    state = {multiline: '', commaSeparated: '', multiSelect: []}
+    handleCommaSepartedChange = (event) => {
+      const {value} = event.target
+      const allVals = value.split(',').map(v => v.trim()).filter(Boolean)
+      this.setState(
+        {
+          commaSeparated: value,
+          multiline: allVals.join('\n'),
+          multiSelect: allVals.filter(v => MyFancyFrom.availableOptions.includes(v))
+        }
+      )
+    }
+
+    handleMultilineChange = (event) => {
+      const {value} = event.target
+      const allVals = value.split(',').map(v => v.trim()).filter(Boolean)
+      this.setState(
+        {
+          multiline: value,
+          commaSeparated: allVals.join('\n'),
+          multiSelect: allVals.filter(v => MyFancyFrom.availableOptions.includes(v))
+        }
+      )
+    }
+    handleMultiSelectChange = (event) => {
+      const allVals = Array.from(event.target.selectedOptions).map(o => o.value)
+      console.log(allVals)
+      this.setState({
+        multiSelect: allVals,
+        multiline: allVals.join('\n'),
+        commaSeparated: allVals.join(',')
+      })
+    }
+
+    render(){
+      const {commaSeparated, multiline, multiSelect} = this.state
+      return(
+        <div>
+          <label>comma separted values</label><br/>
+          <input onChange={this.handleCommaSepartedChange} value={commaSeparated} /><br/>
+          <label>multiline values</label><br/>
+          <textarea rows="10" onChange={this.handleMultilineChange} value={multiline}></textarea><br/>
+          <label>multiSelect values</label><br/>
+          <select
+            multiple
+            value={multiSelect}
+            size={MyFancyFrom.availableOptions.length}
+            onChange={this.handleMultiSelectChange}
+          >
+            {MyFancyFrom.availableOptions.map(
+              optionValue => (
+                <option key={optionValue} value={optionValue}>
+                  {optionValue}
+                </option>
+              )
+            )}
+          </select><br/>
+        </div>
+      )
+    }
+  }
+
+  ReactDOM.render(<MyFancyFrom />, document.getElementById('root'))
+</script>

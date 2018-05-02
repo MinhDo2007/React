@@ -1,0 +1,27 @@
+<div id="root"></div>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+<script type="text/babel">
+  const rootElement = document.getElementById('root');
+
+  const content = 'Hello World 2'
+  const myClassName = 'container'
+  const props = {
+    className: 'container',
+    children: 'Hello World'
+  }
+
+  const element0 = <div className="container">Hello World</div>
+  const element1 = <div className="container">{content}</div>
+  const element2 = <div className={myClassName}>{content}</div>
+  const element3 = <div className={myClassName + '___hi-there'}>{content}</div>
+  const element4 = <div {...props}></div>
+  const element5 = <div className="my-class" {...props}></div>
+  const element6 = <div {...props} className="my-class"></div>
+  const element7 = <div {...props}>{content}</div>
+  const element8 = <div children='12345' {...props}></div>
+  const element8 = <div {...props} children='12345'></div>
+
+  ReactDOM.render(element8, rootElement)
+</script>

@@ -1,0 +1,25 @@
+<div id="root"></div>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+<script type="text/babel">
+  const rootElement = document.getElementById('root');
+  const message = (props) => <div>{props.msg}</div>
+  const Message = (props) => <div>{props.msg}</div>
+  const Message1 = (props) => <div>{props.children}</div>
+
+  const element = (
+    <div className='container'>
+      {message({msg: 'Hello World'})}
+      {message({msg: 'Goodbye World'})}
+
+      <Message msg='Hello World' />
+      <Message msg='Goodbye World' />
+
+      <Message1>Hello World</Message1>
+      <Message1>Goodbye World</Message1>
+    </div>
+  )
+
+  ReactDOM.render(element, rootElement)
+</script>
