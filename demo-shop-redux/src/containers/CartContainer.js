@@ -18,7 +18,7 @@ class CartContainer extends Component {
   }
 
   showCartItem = (cart) => {
-    var result = message.MSG_CART_EMPTY;
+    var result = <tr><td>{message.MSG_CART_EMPTY}</td></tr>
     if (cart.length > 0){
       result = cart.map((item, index) => {
         return (
@@ -30,10 +30,10 @@ class CartContainer extends Component {
   }
 
   showTotalAmount = (cart) => {
-    var result = null;
     if (cart.length > 0){
-      return result = <CartResult cart={cart} />
+      return <CartResult cart={cart} />
     }
+    return null;
   }
 }
 

@@ -9,7 +9,7 @@ var initialState = [
     rating: 4
   },
   {
-    id: 1,
+    id: 2,
     name: 'Samsung',
     price: 200000000,
     description: 'Made In Korea',
@@ -18,7 +18,7 @@ var initialState = [
     rating: 3
   },
   {
-    id: 1,
+    id: 3 ,
     name: 'Sony',
     price: 300000000,
     description: 'Made In Japan',
