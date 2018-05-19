@@ -1,0 +1,13 @@
+.navbar-nav {
+  margin: auto;
+  width: 50%;
+  float: none;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+  color: deeppink;
+}
+
+.active>a {
+  color: deeppink !important;
+}
