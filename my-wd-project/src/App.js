@@ -30,7 +30,7 @@ class App extends Component {
           <Header />
           <div>
             <Nav />
-            <div className="container">
+            <div>
               <div className="row">
                 {this.showContentMenus(routes)}
               </div>

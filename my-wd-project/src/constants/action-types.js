@@ -1,0 +1,3 @@
+export const HANDLE_NEXT = 'HANDLE_NEXT';
+export const NEXT_SLIDE_SHOW = 'NEXT_SLIDE_SHOW';
+export const PREV_SLIDE_SHOW = 'PREV_SLIDE_SHOW';

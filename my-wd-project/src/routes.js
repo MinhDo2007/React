@@ -15,34 +15,39 @@ const routes = [
   },
   {
     path: '/our-story',
-    exact: true,
+    exact: false,
     main: () => <OurStoryPage />
   },
   {
     path: '/bride',
-    exact: true,
+    exact: false,
     main: () => <BridePage />
   },
   {
     path: '/blog',
-    exact: true,
+    exact: false,
     main: () => <BlogPage />
   },
   {
     path: '/search',
-    exact: true,
+    exact: false,
     main: () => <SearchPage />
   },
   {
     path: '/other',
-    exact: true,
+    exact: false,
     main: () => <OtherPage />
   },
   {
     path: '/contact-us',
-    exact: true,
+    exact: false,
     main: () => <ContactUsPage />
-  }
+  },
+  {
+    path: '',
+    exact: false,
+    main: () => <HomePage notFound={true} />
+  },
 ]
 
 export default routes;

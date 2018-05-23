@@ -11,3 +11,7 @@
 .active>a {
   color: deeppink !important;
 }
+
+.navbar {
+  margin-bottom: 0px;
+}
