@@ -34,4 +34,9 @@ body {
   width: 100%;
   height: auto;
   margin: 0px auto;
+  overflow-x: hidden;
+}
+
+.color-deeppink {
+  color: deeppink
 }
