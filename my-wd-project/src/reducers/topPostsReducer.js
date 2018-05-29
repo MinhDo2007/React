@@ -27,8 +27,6 @@ var initialState = [
   }
 ]
 
-
-
 const posts = (state = initialState, action) => {
   state = initialState.slice(0, 3);
   switch(action.type){

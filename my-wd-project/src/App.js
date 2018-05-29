@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/header/Header';
 import Nav from './components/nav/Nav';
+import Footer from './components/footer/Footer';
 import routes from './routes';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 
@@ -36,6 +37,7 @@ class App extends Component {
               </div>
             </div>
           </div>
+          <Footer />
         </div>
       </Router>
     );

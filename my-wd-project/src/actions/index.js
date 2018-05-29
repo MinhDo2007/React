@@ -17,3 +17,9 @@ export const actPrevSlideShow = () => {
     type: TYPES.PREV_SLIDE_SHOW,
   }
 }
+
+export const actToggleReadContent = () => {
+  return {
+    type: TYPES.TOGGLE_READ_CONTENT
+  }
+}

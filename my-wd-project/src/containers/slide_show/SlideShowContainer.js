@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import SlideShow from './../../components/slide_show/SlideShow';
-import { actHandleNext, actNextSlideShow, actPrevSlideShow } from './../../actions/index'
+import { actHandleNext, actNextSlideShow, actPrevSlideShow } from './../../actions/index';
 
 class SlideShowContainer extends Component {
   componentDidMount(){
