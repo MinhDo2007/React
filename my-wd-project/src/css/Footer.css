@@ -1,0 +1,111 @@
+hr.title {
+  margin: 0 15%;
+}
+
+.footer-content {
+  line-height: 2.7rem;
+}
+
+hr.content {
+  margin: 10% 15% 5%;
+}
+
+footer {
+  text-align: center;
+}
+
+.font-small {
+  font-size: 14px;
+}
+
+.indigo {
+  background-color: deeppink!important;
+}
+
+.mt-4 {
+  margin-top: 1.5rem!important;
+}
+
+.mt-5 {
+  margin-top: 3rem!important;
+}
+
+footer.page-footer {
+  color: #fff;
+}
+
+.form-footer {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-center {
+  text-align: center!important;
+}
+
+.row {
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.justify-content-center {
+  justify-content: center!important;
+}
+
+.flex-center {
+  align-items: center;
+  height: 100%;
+}
+
+.d-flex {
+  display: flex!important;
+}
+
+.pt-5, .py-5 {
+  padding-top: 3rem!important;
+}
+.mb-3, .my-3 {
+  margin-bottom: 1.5rem!important;
+}
+
+.mb-4, .my-4 {
+  margin-bottom: 2.5rem!important;
+}
+
+.mb-5, .my-5 {
+  margin-bottom: 3.5rem!important;
+}
+
+footer.page-footer a {
+  color: #fff;
+}
+
+.font-weight-bold {
+  font-weight: 800!important;
+}
+
+.text-uppercase {
+  text-transform: uppercase!important;
+}
+
+.rgba-white-light {
+  background-color: rgba(255,255,255,.3);
+}
+
+.d-md-none {
+  display: none!important;
+}
+
+footer.page-footer .footer-copyright {
+  overflow: hidden;
+  background-color: rgba(0,0,0,.2);
+  color: rgba(255,255,255,.6);
+}
+
+.mr-4 {
+  margin-right: 1.5rem!important;
+}

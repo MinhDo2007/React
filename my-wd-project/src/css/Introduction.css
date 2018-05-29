@@ -1,0 +1,23 @@
+h1.title {
+  font-size: 60px;
+  padding: 30px 0px;
+  color: deeppink;
+  padding-bottom: 0px;
+}
+
+.content {
+  line-height: 1.5em;
+}
+
+.read-more {
+  max-height: 100% !important;
+  display: block;
+  position: static;
+  right: 0;
+  top: 3em;
+  width: 25%;
+}
+
+#introduction .btn {
+  padding: 0px;
+}
