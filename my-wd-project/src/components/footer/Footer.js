@@ -6,7 +6,7 @@ import Content from './Content';
 class Footer extends Component {
   render(){
     return (
-      <footer className="page-footer font-small indigo mt-4">
+      <footer className="page-footer font-small indigo mt-4" id="footer">
         <div className="container form-footer">
           <Menu />
           <hr className="rgba-white-light title" />
