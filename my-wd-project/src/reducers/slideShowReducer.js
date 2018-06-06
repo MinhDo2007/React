@@ -44,9 +44,9 @@ const images = (state = initialState, action) => {
     case TYPES.HANDLE_NEXT:
       return { ...state, indexImage: handleNext(indexImage) };
     case TYPES.NEXT_SLIDE_SHOW:
-      return { ...state, indexImage: handleNext(indexImage) }
+      return { ...state, indexImage: handleNext(indexImage) };
     case TYPES.PREV_SLIDE_SHOW:
-      return { ...state, indexImage: handlePrev(indexImage) }
+      return { ...state, indexImage: handlePrev(indexImage) };
     default:
       return state;
   }
