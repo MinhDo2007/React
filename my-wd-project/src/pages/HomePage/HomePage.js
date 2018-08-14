@@ -4,6 +4,10 @@ import {Redirect} from 'react-router-dom';
 import TopPostContainer from './../../containers/top_post/TopPostContainer';
 import IntroductionContainer from './../../containers/introduction/IntroductionContainer';
 import GalleryContainer from './../../containers/gallery/GalleryContainer';
+import Relatives from './../../components/relatives/Relatives'
+import GroomBride from './../../components/groom_bride/GroomBride'
+import LoveStory from '../../components/love_story/LoveStory';
+
 
 class HomePage extends Component {
   render() {
@@ -16,7 +20,10 @@ class HomePage extends Component {
         <SlideShowContainer />
         <TopPostContainer />
         <IntroductionContainer />
+        <GroomBride />
+        <LoveStory />
         <GalleryContainer />
+        <Relatives />
       </div>
     );
   }

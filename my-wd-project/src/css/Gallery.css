@@ -181,3 +181,15 @@
   overflow: auto;
   height: 720px;
 }
+
+
+#gallery h1.title {
+  color: deeppink;
+  font-family: FontTitle;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+  text-align: center;
+  line-height: 80px;
+  margin-bottom: 50px;
+}

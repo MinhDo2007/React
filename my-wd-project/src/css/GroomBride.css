@@ -1,0 +1,47 @@
+#groom-bride h1.title {
+  color: deeppink;
+  font-family: FontTitle;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+  text-align: center;
+  line-height: 80px;
+  margin-bottom: 50px;
+}
+
+#groom-bride .avatar img{
+  width: 100%;
+  height: 500px;
+}
+
+#groom-bride .groomBrideInfo {
+  text-align: center;
+  height: 500px;
+}
+
+#groom-bride .avatar {
+  padding: 0;
+}
+
+#groom-bride .info {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+}
+
+#groom-bride .name {
+  font-family: FontDob;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  text-align: center;
+  color: #282828;
+  line-height: 50px;
+}
+
+#groom-bride .text {
+  font-style: italic;
+  color: #808080;
+}

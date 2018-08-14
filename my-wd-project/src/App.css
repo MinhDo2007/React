@@ -40,3 +40,11 @@ body {
 .color-deeppink {
   color: deeppink
 }
+
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff url('/images/loading-icon.gif') no-repeat center center;
+  z-index: 9999;
+}

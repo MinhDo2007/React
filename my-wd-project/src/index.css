@@ -9,3 +9,18 @@ body {
   font-style: normal;
   font-size: 15px;
 }
+
+@font-face {
+  font-family: 'FontTitle';
+  src: url('/font/freebooterscript.ttf');
+}
+
+@font-face {
+  font-family: 'FontDob';
+  src: url('/font/DobkinPlain.ttf');
+}
+
+@font-face {
+  font-family: 'FontRouge';
+  src: url('/font/RougeScript-Regular.ttf')
+}

@@ -1,5 +1,6 @@
 .page-header {
   margin: auto;
+  background-image: url("/images/background.gif");
 }
 
 #logo {
