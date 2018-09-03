@@ -48,3 +48,15 @@ body {
   background: #fff url('/images/loading-icon.gif') no-repeat center center;
   z-index: 9999;
 }
+
+.hide-nav {
+  display: none;
+}
+
+.show-nav {
+  display: block;
+}
+
+.row {
+  margin: 0 !important;
+}

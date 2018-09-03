@@ -1,70 +1,119 @@
 import React, { Component } from 'react';
 import './../../css/Nav.css';
-import { Route, Link } from 'react-router-dom';
+// import { Route, Link } from 'react-router-dom';
+
+// const menus = [
+//   {
+//     name: 'Home',
+//     to: '/',
+//     exact: true
+//   },
+//   {
+//     name: 'Our Story',
+//     to: '/our-story',
+//     exact: false
+//   },
+//   {
+//     name: 'Bride',
+//     to: '/bride',
+//     exact: false
+//   },
+//   {
+//     name: 'Blog',
+//     to: '/blog',
+//     exact: false
+//   },
+//   {
+//     name: 'Seacrh',
+//     to: '/search',
+//     exact: false
+//   },
+//   {
+//     name: 'Other',
+//     to: '/other',
+//     exact: false
+//   },
+//   {
+//     name: 'Contact Us',
+//     to: '/contact-us',
+//     exact: false
+//   }
+// ]
+
+// const MenuLink = ({label, to, activeOnlyWhenExact}) => {
+//   return (
+//     <Route
+//       path={to}
+//       exact={activeOnlyWhenExact}
+//       children={
+//         ({match})=>{
+//           var active = match ? 'active' : '';
+//           return (
+//             <li className={active}>
+//               <Link to={to}>{label}</Link>
+//             </li>
+//           )
+//         }
+//       }
+//     />
+//   )
+// }
 
 const menus = [
   {
-    name: 'Home',
-    to: '/',
-    exact: true
+    name: 'HOME',
+    href: '#bg-home'
   },
   {
-    name: 'Our Story',
-    to: '/our-story',
-    exact: false
+    name: 'TOP POSTS',
+    href: '#top-posts'
   },
   {
-    name: 'Bride',
-    to: '/bride',
-    exact: false
+    name: 'INTRODUCTION',
+    href: '#introduction'
   },
   {
-    name: 'Blog',
-    to: '/blog',
-    exact: false
+    name: 'GROOM BRIDE',
+    href: '#groom-bride'
   },
   {
-    name: 'Seacrh',
-    to: '/search',
-    exact: false
+    name: 'LOVE STORY',
+    href: '#love-story'
   },
   {
-    name: 'Other',
-    to: '/other',
-    exact: false
+    name: 'INVITATION CARD',
+    href: '#invitation-card'
   },
   {
-    name: 'Contact Us',
-    to: '/contact-us',
-    exact: false
+    name: 'GALLERY',
+    href: '#gallery'
+  },
+  {
+    name: 'RELATIVES',
+    href: '#relatives'
+  },
+  {
+    name: 'ABOUT',
+    href: 'about'
   }
 ]
 
-const MenuLink = ({label, to, activeOnlyWhenExact}) => {
-  return (
-    <Route
-      path={to}
-      exact={activeOnlyWhenExact}
-      children={
-        ({match})=>{
-          var active = match ? 'active' : '';
-          return (
-            <li className={active}>
-              <Link to={to}>{label}</Link>
-            </li>
-          )
-        }
-      }
-    />
-  )
-}
-
 class Nav extends Component {
+  // showMenus = (menus) => {
+  //   var result = null;
+  //   if(menus.length > 0){
+  //     result = menus.map((menu, index)=>{
+  //       return <MenuLink label={menu.name} to={menu.to} activeOnlyWhenExact={menu.exact} key={index} />
+  //     })
+  //   }
+  //   return result;
+  // }
+
   showMenus = (menus) => {
     var result = null;
     if(menus.length > 0){
-      result = menus.map((menu, index)=>{
-        return <MenuLink label={menu.name} to={menu.to} activeOnlyWhenExact={menu.exact} key={index} />
+      result = menus.map((menu, index) => {
+        return <li key={index}><a href={menu.href}>{menu.name}</a></li>
       })
     }
     return result;

@@ -25,9 +25,8 @@ class GalleryContainer extends Component {
           wowAnimated = 'fadeInUp'
         }
         return(
-          <div className={`column wow ${wowAnimated}`} data-wow-delay="1.25s" data-wow-duration="1.5s" key={index}>
-            <img src={image.url} className="hover-shadow resize" alt="" onClick={() => this.openModal(index)} />
-          </div>
+          <img src={image.url} className={`hover-shadow resize wow ${wowAnimated}`} alt="" onClick={() => this.openModal(index)} 
+            data-wow-delay="1.25s" data-wow-duration="1.5s" key={index} />
         )
       })
     }
@@ -49,7 +48,7 @@ class GalleryContainer extends Component {
         <div className="wow flipInX" data-wow-delay="1.25s" data-wow-duration="2s">
           <h1 className="title">My Wedding Gallery</h1>
         </div>
-        <div className="row">
+        <div className="gallery-images">
           {this.showGallery(images)}
         </div>
         <GalleryModalContainer images={images} currentIndex={currentIndex} />

@@ -1,24 +1,36 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import { translate } from 'react-i18next';
+
+const bgTransBtn = {
+  backgroundColor: 'deeppink',
+  borderColor: 'deeppink',
+  color: 'white'
+}
 
 class Search extends Component {
   render(){
+    const {t, i18n} = this.props
     return (
-      <div>
-        <div className="input-group" id="search">
-          <input type="text" className="form-control h-70" placeholder="Search" />
-          <div className="input-group-btn">
-            <button className="btn btn-default h-70" type="submit">
-              <i className="glyphicon glyphicon-search"></i>
-            </button>
-          </div>
-        </div>
+      <Fragment>
         <div className="sentence">
-          <i><div className="mb-5">Anh ở đây không phải bởi vì số mệnh hay vì anh bị mắc kẹt ở đây </div>
-          <div>Mà bởi bì Anh muốn được ở bên em hơn bất kỳ nơi nào khác trên thế giới</div></i>
+          <p className="translate-btn">
+            <button onClick={() => i18n.changeLanguage('vi')}
+              className="btn btn-default custom-translate-btn"
+              style={i18n.language === 'vi' ? bgTransBtn : {}}>
+              vi
+            </button>
+            <button onClick={() => i18n.changeLanguage('en')}
+              className="btn btn-default custom-translate-btn"
+              style={i18n.language === 'en' ? bgTransBtn : {}}> 
+              en
+            </button>
+          </p>
+          {t('header.sentencers1')}<br />
+          {t('header.sentencers2')}
         </div>
-      </div>
+      </Fragment>
     )
   }
 }
 
-export default Search;
+export default translate('common')(Search);

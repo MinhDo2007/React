@@ -65,25 +65,26 @@ class GalleryModalContainer extends Component {
       <div id="myModal" className="modal">
         <div className="modal-content">
           <span className="close cursor" onClick={this.closeModal}>&times;</span>
-          <div className="row">
-            <div className="col-md-2 list-images">
+          <div className="modal-images">
+            <div className="list-images">
               <div className="scroll-images">
                 {this.subImages(images, currentIndex)}
               </div>
             </div>
 
-            <div className="col-md-9">
+            <div className="modal-image">
               <div className="caption-container">
                 <h2><p id="caption"><b>{images[currentIndex].title}</b></p></h2>
               </div>
 
               {this.myImages(images, currentIndex)}
 
-              <a className="prev" onClick={this.prevImage}>&#10094;</a>
-              <a className="next" onClick={this.nextImage}>&#10095;</a>
-
               <div className="caption-container">
-                <p id="caption" className="description"><i>{images[currentIndex].description}</i></p>
+                <p id="caption" className="description">
+                  <a className="pre-img" onClick={this.prevImage}>&#10094;</a>
+                  <i>{images[currentIndex].description}</i>
+                  <a className="next-img" onClick={this.nextImage}>&#10095;</a>
+                </p>
               </div>
             </div>
           </div>

@@ -2,7 +2,7 @@
 
 var initialState = [
   {
-    image: "/images/top_posts.jpg",
+    image: "/images/post1.JPG",
     title: 'Picture Wedding 1',
     description: 'this is description picture wedding 1 this is description picture wedding 1 this is description picture wedding 1 this is description picture wedding 1 this is description picture wedding 1 this is description picture wedding 123456789',
     view: 10

@@ -13,9 +13,9 @@ class Footer extends Component {
           <Content />
           <hr className="clearfix d-md-none rgba-white-light content" />
         </div>
-        <div className="footer-copyright text-center py-3">© 2018 Copyright:
+        {/* <div className="footer-copyright text-center py-3">© 2018 Copyright:
           <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a>
-        </div>
+        </div> */}
       </footer>
     )
   }

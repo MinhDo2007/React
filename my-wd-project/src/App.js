@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import WOW from "wowjs";
 import './App.css';
-import Header from './components/header/Header';
-import Nav from './components/nav/Nav';
+// import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import routes from './routes';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import { translate } from 'react-i18next';
 
 class App extends Component {
   constructor(props){
@@ -20,14 +20,11 @@ class App extends Component {
   changeContent = () => (
     this.setState({
       content: (
-        <div className="wow slideInUp App" data-wow-duration="1.5s">
-          <Header />
+        <div className="App">
+          {/* <Header /> */}
           <div>
-            <Nav />
-            <div>
-              <div className="row">
-                {this.showContentMenus(routes)}
-              </div>
+            <div className="row">
+              {this.showContentMenus(routes)}
             </div>
           </div>
           <Footer />
@@ -53,8 +50,6 @@ class App extends Component {
     return <Switch>{result}</Switch>;
   }
 
-  const 
-
   render() {
     return (
       <Router>
@@ -66,4 +61,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default translate('common')(App);  

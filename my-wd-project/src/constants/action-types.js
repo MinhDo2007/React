@@ -6,3 +6,4 @@ export const OPEN_MODAL = 'OPEN_MODAL';
 export const CHANGE_IMAGE = 'CHANGE_IMAGE';
 export const PREV_IMAGE = 'PREV_IMAGE';
 export const NEXT_IMAGE = 'NEXT_IMAGE';
+export const HANDLE_NEXT_LOVE_STORY = 'HANDLE_NEXT_LOVE_STORY'

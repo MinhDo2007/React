@@ -6,6 +6,12 @@ export const actHandleNext = () => {
   }
 }
 
+export const actHandleNextLoveStory = () => {
+  return {
+    type: TYPES.HANDLE_NEXT_LOVE_STORY
+  }
+}
+
 export const actNextSlideShow = () => {
   return {
     type: TYPES.NEXT_SLIDE_SHOW,

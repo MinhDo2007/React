@@ -2,12 +2,18 @@ var initialState = [
   {
     avatar: "/images/image1.png",
     name: "Do Tuan Minh",
-    text: "Mỗi năm của hôn nhân đều rất đặc biệt. Mỗi linh hồn đều hát những bài ca của tình yêu. Chúng tôi ước được nghe bản tình ca này mãi mãi."
+    age: "  26",
+    address: "  Chung Hamlet, Hoa Xa, Ung Hoa, Ha Noi",
+    mobile: '  01642264330',
+    text: "  In this life we can no do great things. We can only do small things with great love"
   },
   {
     avatar: "/images/image1.png",
     name: "Phung Huong Ly",
-    text: "Mỗi năm của hôn nhân đều rất đặc biệt. Mỗi linh hồn đều hát những bài ca của tình yêu. Chúng tôi ước được nghe bản tình ca này mãi mãi."
+    age: "  23",
+    address: "  Thuong Doan Hamlet, Hoa Xa, Ung Hoa, Ha Noi",
+    mobile: '  01642264330',
+    text: "  A flower cannot blossom without sunshine, and man cannot live without love"
   }
 ];
 

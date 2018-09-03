@@ -5,6 +5,7 @@ import toggleReadContent from './IntroductionReducer';
 import galleryImages from './galleryReducer';
 import relatives from './relativesReducer';
 import groomBride from './groomBrideReducer';
+import images from './loveStoryReducer';
 
 const appReducers = combineReducers({
   slideShow,
@@ -12,7 +13,8 @@ const appReducers = combineReducers({
   toggleReadContent,
   galleryImages,
   relatives,
-  groomBride
+  groomBride,
+  images,
 })
 
 export default appReducers;
