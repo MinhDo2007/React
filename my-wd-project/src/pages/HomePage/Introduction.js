@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './../../css/Introduction.css';
 import WOW from "wowjs";
+import { translate } from 'react-i18next';
 
 class Introduction extends Component {
   componentDidMount() {
@@ -8,7 +9,7 @@ class Introduction extends Component {
   }
 
   render(){
-    const {children, status} = this.props;
+    const {children, status, t} = this.props;
     return(
       <div className="container" id="introduction">
         <div className="flower-line">
@@ -20,13 +21,7 @@ class Introduction extends Component {
         <div className="wow fadeInUp" data-wow-duration="2s">
           <p className={(status ? 'read-more' : 'content')}>
             <i>
-              Hello and welcome! Friends and Family of the BRIDE and GROOM, welcome and thank you for being here on this important day.<br />
-              For every thing there is a season and a time for every purpose under Heaven.  Now is the time for a wedding.<br />
-              BRIDE and GROOM have asked you all here today to bear witness to the forming of their covenant.<br />
-              Marriage will allow you a new environment to share your lives together, standing together to face life and the world, hand-in-hand.<br />
-              Marriage is going to expand you as individuals, define you as a couple, and deepen your love for one another.<br />
-              To be successful, you will need strength, courage, patience and a really good sense of humor.<br />
-              So, let your marriage be a time of waking each morning and falling in love with each other all over again.<br />
+              {t('introduction.content')}
             </i>
           </p>
           { children }
@@ -36,4 +31,4 @@ class Introduction extends Component {
   }
 }
 
-export default Introduction;
+export default translate("common")(Introduction);

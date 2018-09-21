@@ -9,5 +9,14 @@
     "age": "Age",
     "address": "Address",
     "mobile": "Mobile"
+  },
+  "loveStory": {
+    "sentencers1": "It only takes a second to say I love you, but it will take a lifetime to show you how much",
+    "sentencers2": "You know when you love someone when you want them to be happy event if their happiness means that you’re not part of it",
+    "sentencers3": "I’d give up my life if I could command one smille of your eyes, one touch of your hand",
+    "sentencers4": "In lover’s sky, all stars are eclipsed by the eyes of the one you love"
+  },
+  "introduction": {
+    "content": "Hello and welcome! Friends and Family of the BRIDE and GROOM, welcome and thank you for being here on this important day. For every thing there is a season and a time for every purpose under Heaven. Now is the time for a wedding. BRIDE and GROOM have asked you all here today to bear witness to the forming of their covenant. Marriage will allow you a new environment to share your lives together, standing together to face life and the world, hand-in-hand.Marriage is going to expand you as individuals, define you as a couple, and deepen your love for one another.To be successful, you will need strength, courage, patience and a really good sense of humor. So, let your marriage be a time of waking each morning and falling in love with each other all over again."
   }
 }

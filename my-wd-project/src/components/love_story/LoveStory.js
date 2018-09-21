@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import './../../css/LoveStory.css';
 import {actHandleNextLoveStory} from './../../actions/index'
 import WOW from "wowjs";
+import { translate } from 'react-i18next';
 
 class LoveStory extends Component {
   componentDidMount() {
@@ -19,6 +20,7 @@ class LoveStory extends Component {
   }
 
   render(){
+    const {t} = this.props
     const { indexImage, images } = this.props.images
     return(
       <div id="love-story" className="container">
@@ -34,31 +36,31 @@ class LoveStory extends Component {
               <h4 className="title">First Time We Met</h4>
               <h5 className="date">20/7/1992</h5>
               <div className="image"><img src="/images/image1.png" alt="" /></div>
-              <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              <p>{t('loveStory.sentencers1')}</p>
             </div>
           </div>
           <div className="right container-content wow fadeIn" data-wow-duration="3.5s">
             <div className="content">
               <h4 className="title">We fall in love each other</h4>
               <h5 className="date">20/7/1992</h5>
-              <div className="image"><img src="/images/image1.png" alt="" /></div>
-              <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              <div className="image"><img src="/images/11.JPG" alt="" /></div>
+              <p>{t('loveStory.sentencers2')}</p>
             </div>
           </div>
           <div className="left container-content wow fadeIn" data-wow-duration="3.5s">
             <div className="content">
               <h4 className="title">I asked and she said Yes!</h4>
               <h5 className="date">20/7/1992</h5>
-              <div className="image"><img src="/images/image1.png" alt="" /></div>
-              <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              <div className="image"><img src="/images/10.JPG" alt="" /></div>
+              <p>{t('loveStory.sentencers3')}</p>
             </div>
           </div>
           <div className="right container-content wow fadeIn" data-wow-duration="3.5s">
             <div className="content">
               <h4 className="title">We decieded to marry</h4>
               <h5 className="date">20/7/1992</h5>
-              <div className="image"><img src="/images/image1.png" alt="" /></div>
-              <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              <div className="image"><img src="/images/1.jpg" alt="" /></div>
+              <p>{t('loveStory.sentencers4')}</p>
             </div>
           </div>
           <br/><br/><br/>
@@ -87,4 +89,4 @@ const mapDispatchToProps = (dispatch, props) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(LoveStory);
+export default connect(mapStateToProps, mapDispatchToProps)(translate('common')(LoveStory));

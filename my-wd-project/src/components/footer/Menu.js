@@ -11,7 +11,7 @@ class Menu extends Component {
           </h5>
         </div>
 
-        <div className="col-md-2 mb-3">
+        {/* <div className="col-md-2 mb-3">
           <h5 className="text-uppercase font-weight-bold">
             <a href="#!">Products</a>
           </h5>
@@ -21,7 +21,7 @@ class Menu extends Component {
           <h5 className="text-uppercase font-weight-bold">
             <a href="#!">Awards</a>
           </h5>
-        </div>
+        </div> */}
 
         <div className="col-md-2 mb-3">
           <h5 className="text-uppercase font-weight-bold">

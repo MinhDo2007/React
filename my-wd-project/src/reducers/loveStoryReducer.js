@@ -2,10 +2,10 @@ import * as TYPES from './../constants/action-types';
 
 var initialState = {
   images: [
-    "http://themedemo.web-dorado.com/weddingstyle/wp-content/themes/wedding-style/images/slider_1.jpg",
-    "http://themedemo.web-dorado.com/weddingstyle/wp-content/themes/wedding-style/images/slider_2.jpg",
-    "http://themedemo.web-dorado.com/weddingstyle/wp-content/themes/wedding-style/images/slider_1.jpg",
-    "http://themedemo.web-dorado.com/weddingstyle/wp-content/themes/wedding-style/images/slider_2.jpg",
+    "images/4.JPG",
+    "images/6.JPG",
+    "images/bia.JPG",
+    "images/21.JPG",
   ],
   indexImage: 0,
 }

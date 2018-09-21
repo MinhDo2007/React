@@ -9,14 +9,14 @@
   margin-bottom: 50px;
 }
 
-#invitation-card .content {
-  background-image: url('/images/background_invitation.jpg');
+/* #invitation-card .content {
+  background-image: url('/images/bia.JPG');
   margin-bottom: 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   font-family: FontDob;
-  color: aliceblue;
+  color: deeppink;
   font-weight: 400;
   font-size: 34px;
   line-height: 34px;
@@ -25,6 +25,48 @@
   height: 100vh;
   max-width: none;
   margin: 0;
+} */
+
+#invitation-card .invitation-card {
+  background-image: url('/images/bia.JPG');
+  margin-bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  max-width: none;
+  margin: 0;
+  font-family: FontDob;
+  color: white;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 34px;
+}
+
+#invitation-card .cata-section {
+  clear: both;
+  position: relative;
+}
+
+#invitation-card .cata-container {
+  max-width: 100%;
+  transition: transform .5s;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  z-index: 5;
+}
+
+#invitation-card .selection-overlay {
+  opacity: 0.2;
+  background-color: #0a0a0a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 #invitation-card .title {

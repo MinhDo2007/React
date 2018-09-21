@@ -1,6 +1,6 @@
 var initialState = [
   {
-    avatar: "/images/image1.png",
+    avatar: "/images/groom.JPG",
     name: "Do Tuan Minh",
     age: "  26",
     address: "  Chung Hamlet, Hoa Xa, Ung Hoa, Ha Noi",
@@ -8,7 +8,7 @@ var initialState = [
     text: "  In this life we can no do great things. We can only do small things with great love"
   },
   {
-    avatar: "/images/image1.png",
+    avatar: "/images/bride.jpg",
     name: "Phung Huong Ly",
     age: "  23",
     address: "  Thuong Doan Hamlet, Hoa Xa, Ung Hoa, Ha Noi",

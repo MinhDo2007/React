@@ -47,7 +47,6 @@ class HomePage extends Component {
         <LoveStory />
         <InvitationCard />
         <GalleryContainer />
-        <Relatives />
       </div>
     );
   }

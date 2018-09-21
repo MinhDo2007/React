@@ -20,7 +20,7 @@ class GroomBride extends Component {
           <h1 className="title">Groom & Bride</h1>
         </div>
         <div className="groomBrideInfo">
-          <div className="avatar wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+          <div className="avatar wow fadeInLeft groom" data-wow-duration="1s" data-wow-delay="1s">
             <img src={groomBride[0].avatar} alt="" />
           </div>
           <div className="info wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">

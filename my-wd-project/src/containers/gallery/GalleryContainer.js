@@ -4,6 +4,7 @@ import Gallery from './../../pages/HomePage/Gallery';
 import GalleryModalContainer from './GalleryModalContainer';
 import { actOpenModal } from './../../actions/index';
 import WOW from "wowjs";
+import LazyLoad from 'react-lazyload';
 
 class GalleryContainer extends Component {
   componentDidMount() {
@@ -25,8 +26,10 @@ class GalleryContainer extends Component {
           wowAnimated = 'fadeInUp'
         }
         return(
-          <img src={image.url} className={`hover-shadow resize wow ${wowAnimated}`} alt="" onClick={() => this.openModal(index)} 
-            data-wow-delay="1.25s" data-wow-duration="1.5s" key={index} />
+          <LazyLoad>
+            <img src={image.url} className={`hover-shadow resize wow ${wowAnimated}`} alt="" onClick={() => this.openModal(index)} 
+              data-wow-delay="1.25s" data-wow-duration="1.5s" key={index} />
+          </LazyLoad>
         )
       })
     }
